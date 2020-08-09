@@ -1,0 +1,265 @@
+/*import fonts from font.css file*/
+@import url(./fonts.css);
+
+/*css variables*/
+@import url(./partials/_variables.css)
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+
+/* start navigation */ 
+.header_area .main-menu .navbar{
+    padding: 0;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+  font: normal 500 15px/2px var(--roboto);
+  text-transform: uppercase;
+  padding: 1.7rem;
+  color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+  background:linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+  background:linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* end navigation */
+
+/*banner area*/
+
+.site-main .site-banner .site-title h3{
+  padding-top: 25%;
+  font-size: 2rem ;
+  font-weight: 500;
+}
+.site-main .site-banner .site-title h1{
+  font-size: 5rem ;
+}
+.site-main .site-banner .site-title h4{
+  font-size: 1.5rem ;
+}
+
+.site-main .site-banner .banner-image > img{
+
+  width: 90rem;
+}
+
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+/* Buttons */ 
+
+.button{
+  padding: .8rem 2.2rem;
+  font: normal 500 16px/20px var(--roboto);
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.button.primary-button{
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: whitesmoke;
+  transition: background .6s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover{
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+}
+
+.button.primary-button::after, .button.secondary-button::after{
+  position: absolute;
+  top: -2px; left: -2px;
+  bottom: -2px;  right: -2px;
+  background:linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  content: ' ';
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.button.secondary-button{
+  background: white;
+  background-clip: padding-box;
+  transition: background .6s ease;
+}
+
+.button.secondary-button:hover{
+  background:linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  color: whitesmoke;
+  box-shadow: var(--box-shadow);
+}
+
+p.para{
+  color: var(--text-color);
+  font: normal 500 16px/ 25px var(--roboto);
+}
+
+.font-roboto{
+  font-family: var(--roboto);
+}
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+.title-h1{
+  font: normal bold 39px/ 40px var(--roboto);
+}
+
+
+
+
+/*end banner area*/
+
+/* Start About Area */ 
+
+
+.site-main .about-area{
+  padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title .paragraph > p{
+  padding: .4rem 0;
+}
+
+/* skillbar */
+
+.my-skill{
+  text-align: center
+}
+
+.skills {
+
+  padding: 0rem 1rem;
+  margin: 2em 0;
+  position: relative;
+}
+
+.skill_outer-bar,
+.skill_iner-bar {
+  
+  height: 0.85em;
+}
+
+.skill_outer-bar {
+  margin-top: 1em;
+  background: rgba(221, 225, 228, 0.692);
+}
+
+.skill_iner-bar {
+  animation: fillbar 1s forwards;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+
+.skill_iner-bar--80 {
+  width: 80%;
+  background:linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+}
+
+.skill_iner-bar--90 {
+  width: 90%;
+  background:linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+}
+
+.skill_iner-bar--60 {
+  width: 60%;
+  background:linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+}
+
+.skill_iner-bar--30 {
+  width: 30%;
+  background:linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+}
+
+@keyframes fillbar {
+  to {
+      transform: scaleX(1);
+  }
+}
+
+.skill_iner-bar html,
+body,
+header,
+.view {
+  height: 100%;
+}
+/* skillbar */
+
+/* End About Area */ 
+
+/* start portfolio area */ 
+.site-main .project-area{
+  padding-top: 10rem;
+  margin-top: 10rem 5rem;
+}
+.site-main .project-area .project-title{
+  font-size: 2rem ;
+  font-weight: 500;
+  text-align: center
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+font: normal 700 25px/12px var(--roboto);
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+/* end portfolio area*/
+
+/* contact */
+.contact-content{
+    padding: 8rem 5rem;
+
+  }
+
+/* end contact*/
+
+/* Footer Area */ 
+
+footer.footer-area{
+  padding: 5rem 0;
+  background: url(../img/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5{
+  font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+  font-size:22px;
+  padding: 2rem;
+  color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+  color: var(--primary-color);
+}
+
+
+/* End Footer */ 
